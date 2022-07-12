@@ -1,0 +1,40 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+	var tela = document.querySelector("canvas"); //Trás o canvas para o mundo JavaScript 
+	var pincel = tela.getContext("2d"); //Define o tipo de pincel utilizado na tela
+
+	pincel.fillStyle = "lightgrey";  //Modifica a cor do pincel
+	pincel.fillRect(0, 0, 600, 400); //Trouxe um triângulo para a tela o preexendo nessas coordenadas
+
+	pincel.fillStyle ="Green";
+	pincel.fillRect(0, 0, 200, 400);
+
+	pincel.fillStyle ="White";
+	pincel.fillRect(200, 0, 200, 400);
+
+	pincel.fillStyle ="red";
+	pincel.fillRect(400, 0, 200, 400);
+
+	pincel.fillStyle ="yellow";
+	pincel.beginPath();
+	pincel.moveTo(300, 200);
+	pincel.lineTo(200, 400);
+	pincel.lineTo(400, 400);
+	pincel.fill();
+
+	pincel.fillStyle ="yellow";
+	pincel.beginPath();
+	pincel.moveTo(300, 200);
+	pincel.lineTo(200, 0);
+	pincel.lineTo(400, 0);
+	pincel.fill();
+
+	pincel.fillStyle ="black";
+	pincel.beginPath();
+	pincel.arc(300, 200, 50, 0, 2 * 3.14);
+	pincel.fill();
+	
+
+</script> 
