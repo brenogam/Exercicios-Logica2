@@ -1,0 +1,28 @@
+Lista de Tags Aprendidas ( Sublime/JavaScript ) - Aulas de Lógica 2 - ALURA
+
+As tags abaixo que possuem * só funcionarão no mundo Java Script.
+As consultas quanto as API poderão ser feitas no google, procurando por "Canvas 2d api".
+
+<canvas></canvas> A tag canvas irá abrir um quadro em minha tela para fazer os desenhos. Nesse Exexemplo, com 600 de largura e 400 de altura. Ex. <canvas width="600 height="400"></canvas> 
+
+document.querySelector(""); A tag irá buscar um elemento da página para se atribuir a outro. Ex. var tela = document.querySelector("canvas");
+
+tela.getContext("2d"); A tag getContext irá pedir à tela um estilo do pincel, no caso o "2d". Ex. var pincel = tela.getContext("2d);
+
+pincel.fillStyle = "cor"; Definirá a cor do pincel a ser utilizada Ex. pincel.fillStyle = "yellow";
+
+pincel.fillRect(0, 0, x, y); Essa função criará as coordenadas para execução de um retângulo. Ex pincel.fillRect(200, 200, 400, 300); 
+
+pincel.beginPath(); Reiniciará o começo do meu caminho com uma nova coordenada, limpa o caminho.
+
+pincel.moveTo(x, y); Move o seu ponto de começo até a coordenada definida em x e y. Ex. pincel.moveTo(300, 200); Dessa forma começaremos desse ponto determinado.
+
+pincel.lineTo(x, y); Define uma coordenada para poder traçar, é muito utilizado para fazer triângulos. Ex. pincel.lineTo(400, 200); 
+
+pincel.fill(); Comando utilizado para preenxer todo o interior de uma figura com alguma cor.
+
+pincel.arc(x, y, raio, ângulo, 2*Math.PI); Comando utilizado para criar círculos. Ex. pincel.arc(200, 400, 50, 0, 2*3,14);
+
+
+
+
